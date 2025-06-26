@@ -23,7 +23,7 @@ const app = express();
 
 // 🛡️ Middleware
 app.use(cors({
-  origin: process.env.CLIENT_ORIGIN,
+  origin: process.env.CLIENT_ORIGIN || "https://wiecodeslive-igks4uvlb-vishwas-projects-25f2c8b2.vercel.app",
   credentials: true,
 }));
 app.use(express.json());
