@@ -23,7 +23,7 @@ const app = express();
 
 // 🛡️ Middleware
 app.use(cors({
-  origin: 'http://localhost:8080', // update if your frontend is hosted elsewhere
+  origin: 'wiecodeslive.vercel.app', // update if your frontend is hosted elsewhere
   credentials: true,
 }));
 app.use(express.json());
